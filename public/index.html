@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Inputs estilizados</h1>
+    <ol>
+        <li>botones estilizados</li>
+        <li>Textos estilizados</li>
+        <li>Imagenes estilizadas</li>
+        <li>Body/Contenedor</li>
+        <li>Estilo de validacion</li>
+    </ol>
+
+    <form action="" method="get">
+        <label for="nom">Nombre</label><br>
+        <input class="text" type="text" name="nom" id="nom"><br><br>
+        <label for="ape">Apellido</label><br>
+        <input class="text" type="text" name="ape" id="ape"><br><br>
+        <label for="direc">Direccion</label><br>
+        <input class="text" type="text" name="direc" id="direc"><br><br>
+        <input class="acep" type="submit" value="Aceptar">
+    </form><br>
+    <img src="src/css.png" alt="">
+    </body>
+</html>
+
+
+
+<style>
+    P {
+    font-size : 12pt;
+    font-family : arial,helvetica;
+    font-weight : normal;
+}
+H1 {
+    font-size : 36pt;
+    font-family : verdana,arial;
+    text-decoration : underline;
+    text-align : center;
+    background-color : rgb(221, 40, 161);
+    color : rgb(123, 168, 241);
+}
+H1.form2{
+    font-size : 36pt;
+    font-family : verdana,arial;
+    text-decoration : underline;
+    text-align : center;
+    background-color : rgb(162, 177, 175);
+    color : rgb(43, 40, 40);
+}
+body {
+    background-color : rgba(237, 224, 224, 0.952);
+    font-family : arial;
+}
+body.prin{
+    background-image: url("../src/tec.jpg"); 
+}
+.acep{
+    border-radius: 15px;
+    width: 100px;
+    margin-left: 30%;
+    background-color: rgb(233, 108, 229);
+}
+form{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+form input[type="submit"]:hover{
+	cursor:pointer;
+    background:#c32cb1;
+}
+img{
+    border: 1px red;
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 50%;*/
+}
+img:hover{
+    box-shadow: 0 0 10px 5px red;
+    cursor: pointer;
+}
+li{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+input{
+    font-family: cursive;
+}
+input:valid{
+    background-color: rgb(247, 249, 251);
+}
+input:invalid{
+    background-color: #c4e1dd;
+}
+label{
+    font-family: cursive;
+}
+.contenedor input{
+    display: block;
+    margin-bottom: 15px;
+}
+input.text{
+    text-transform:uppercase;
+}
+</style>
